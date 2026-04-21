@@ -1,0 +1,21 @@
+[project]
+name = "apple-mensura"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "sunfkny", email = "30853461+sunfkny@users.noreply.github.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "niquests>=3.18.6",
+    "rich>=14.3.3",
+    "typer>=0.24.1",
+]
+
+[project.scripts]
+apple-mensura = "apple_mensura.cli:app"
+
+[build-system]
+requires = ["uv_build>=0.10.11,<0.11.0"]
+build-backend = "uv_build"
